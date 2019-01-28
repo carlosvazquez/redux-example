@@ -4,18 +4,19 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px 0;
 }
 
 .App-link {
@@ -29,4 +30,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.posts, .posts__add-post {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+.posts .posts__item {
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0 20px;
+  margin-bottom: 20px;
+}
+.posts__add-post {
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.posts__add-post .title {
+  margin: 4px 0;
+}
+.posts__add-post form {
+  display: block;
+}
+.posts__add-post label {
+  display: block;
+  margin-bottom: 4px;
+}
+.posts__add-post input {
+  display: inline-block;
+  margin-bottom: 18px;
+  width: 100%;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+.posts__add-post textarea {
+  display: inline-block;
+  margin-bottom: 18px;
+  width: 100%;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+.posts__add-post button.btn {
+  cursor: pointer;
+  padding: 12px;
+  background-color: black;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
